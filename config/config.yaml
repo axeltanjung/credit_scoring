@@ -1,0 +1,116 @@
+# Data
+raw_data_path: data/raw/credit_dataset.csv
+data_path: data/output/data.pkl
+
+predictors_set_path: data/output/predictors.pkl
+target_set_path: data/output/target.pkl
+
+train_path: 
+- 'data/output/X_train.pkl'
+- 'data/output/y_train.pkl'
+test_path: 
+- 'data/output/X_test.pkl' 
+- 'data/output/y_test.pkl'
+
+data_train_path: 'data/output/data_train.pkl'
+data_train_binned_path: 'data/output/data_train_binned.pkl'
+
+crosstab_list_path: 'data/output/crosstab_list.pkl'
+WOE_table_path: 'data/output/WOE_table.pkl'
+IV_table_path: 'data/output/IV_table.pkl'
+
+WOE_map_dict_path: 'data/output/WOE_map_dict.pkl'
+X_train_woe_path: 'data/output/X_train_woe.pkl'
+
+
+# Variables
+target_variable: 'Credit_Score'
+test_size: 0.3
+
+num_columns: 
+- 'Age'
+- 'Annual_Income'
+- 'Num_of_Loan'
+- 'Num_of_Delayed_Payment'
+- 'Outstanding_Debt'
+- 'Monthly_Inhand_Salary'
+- 'Num_Credit_Inquiries'
+- 'Credit_Utilization_Ratio'
+- 'Total_EMI_per_month'
+- 'Num_Bank_Accounts'
+- 'Num_Credit_Card'
+- 'Interest_Rate'
+- 'Delay_from_due_date'
+- 'Amount_invested_monthly'
+- 'Monthly_Balance'
+- 'Changed_Credit_Limit'
+- 'Credit_History_Age'
+cat_columns: 
+- 'Occupation'
+- 'Type_of_Loan'
+- 'Credit_Mix'
+- 'Payment_of_Min_Amount'
+- 'Payment_Behaviour'
+missing_columns:
+- 'Age_bin'
+- 'Num_Bank_Accounts_bin'
+- 'Num_Credit_Card_bin'
+- 'Interest_Rate_bin'
+- 'Num_of_Loan_bin'
+- 'Num_of_Delayed_Payment_bin'
+- 'Num_Credit_Inquiries_bin'
+- 'Monthly_Balance_bin'
+
+num_of_bins: 4
+
+
+# Models
+num_of_cv: 10
+scoring: 'recall'
+
+forward_models_path: models/forward_models.pkl
+best_predictors_path: models/best_predictors_path.pkl
+best_model_path: models/best_model.pkl
+best_model_summary_path: models/best_model_summary.pkl
+
+
+# Scorecards
+pdo: 20
+score_ref: 300
+odds_ref: 30
+
+scorecards_path: models/scorecards.pkl
+
+points_map_dict_path: models/points_map_dict.pkl
+X_points_path: models/X_points.pkl
+X_train_points_path: models/X_train_points.pkl
+
+score_path: models/score_path.pkl
+
+
+# api.py related
+cutoff_score: 150
+
+columns_:
+- 'Age'
+- 'Annual_Income'
+- 'Num_of_Loan'
+- 'Num_of_Delayed_Payment'
+- 'Outstanding_Debt'
+- 'Monthly_Inhand_Salary'
+- 'Num_Credit_Inquiries'
+- 'Credit_Utilization_Ratio'
+- 'Total_EMI_per_month'
+- 'Num_Bank_Accounts'
+- 'Num_Credit_Card'
+- 'Interest_Rate'
+- 'Delay_from_due_date'
+- 'Amount_invested_monthly'
+- 'Monthly_Balance'
+- 'Changed_Credit_Limit'
+- 'Credit_History_Age'
+- 'Occupation'
+- 'Type_of_Loan'
+- 'Credit_Mix'
+- 'Payment_of_Min_Amount'
+- 'Payment_Behaviour'
