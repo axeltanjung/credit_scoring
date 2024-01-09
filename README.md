@@ -1,4 +1,4 @@
-# Credit Scoring Analytics for Credit Card Product using Logistic Regression Algorithm
+# Credit Scoring Analytics for Credit Card Product using Logistic Regression Algorithms
 **1.	Introduction & Background**
    
 A.	Introduction
